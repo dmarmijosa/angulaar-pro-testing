@@ -8,11 +8,30 @@ describe('AppComponent', () => {
     }).compileComponents();
   });
 
-   it('should create the app', () => {
-     const fixture = TestBed.createComponent(AppComponent);
-     const app = fixture.componentInstance;
-     expect(app).toBeTruthy();
-   });
+  it('should create the app', () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.componentInstance;
+    expect(app).toBeTruthy();
+  });
+
+  it('should be 3', () => {
+    const num1 = 1;
+    const num2 = 4;
+
+    const result = num1 + num2;
+    expect(result).toBe(5);
+  });
+
+  // it('should render title', () => {
+  //   const fixure = TestBed.createComponent(AppComponent);
+  //   fixure.detectChanges();
+
+  //   const compiled = fixure.nativeElement as HTMLElement;
+
+  //   expect(compiled.querySelector('h1')?.textContent).toContain(
+  //     'Hello,zonelless calculator'
+  //   );
+  // });
 
   // it(`should have the 'zoneless-calculator' title`, () => {
   //   const fixture = TestBed.createComponent(AppComponent);
